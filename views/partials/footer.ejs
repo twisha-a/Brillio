@@ -1,0 +1,92 @@
+<section id="footer">
+  
+        <div id="footer1">
+          <br>
+          <!-- logo -->
+          <section id="footer_logo">
+            <img src="images/logo.png" width="140px" height="70px" >
+          </section> 
+          <!-- logo -->
+          <br>
+          <br>  
+          <br> 
+          <!--grid for email and sm  -->
+          <section id="footer_info" >
+            <div></div>
+            <div id="footer_email"> 
+              <p id="footer_head1">EMAIL</p><br>
+              <p id="footer_contact_info">info@abcd.com</p></div>
+              <div>
+                <p id="footer_head2">SOCIAL MEDIA</p>
+              <div id="footer_sm_list">
+                <ul>
+                  <li>
+                    <a href="#"><img src="https://n4ggcb7y423kfy7c2p5z4xc1-wpengine.netdna-ssl.com/wp-content/themes/brillio/images/linkedin.png" alt="linkedin" width="20px"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="https://n4ggcb7y423kfy7c2p5z4xc1-wpengine.netdna-ssl.com/wp-content/themes/brillio/images/instagram.png" alt="instagram" width="20px"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="https://n4ggcb7y423kfy7c2p5z4xc1-wpengine.netdna-ssl.com/wp-content/themes/brillio/images/twitter.png" alt="twitter" width="20px"></a>
+                  </li>
+                </ul>
+              </div>
+          </section>  
+          
+          <!--grid for email and sm  -->
+          <br>
+          <!-- rights reserved  -->
+          <section id="footer_rights">
+            <p>All Rights Reserved.</p>
+          </section>
+          <!-- rights reserved  -->
+          
+          <!-- policy and terms -->
+          <section id="footer_pri_term">
+            <ul>
+              <li id="footer_privacy">Privacy policy</li>
+              <li id="footer_terms">Terms of use</li>
+              <li id="footer_terms">FAQs</li>
+            </ul>
+          </section>
+    
+    
+        </div>
+    
+    
+</section>
+<!-- jQuery -->
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+<script>
+    if("<%= typeof page !== 'undefined' ? page : '' %>"==="index"){
+        $("#home").addClass("current-page")
+        $("#Lhome").addClass("current")
+    }  
+    else if("<%= typeof page !== 'undefined' ? page : '' %>"==="cart"){
+        $("#cart").addClass("current-page")
+        $("#Lcart").addClass("current")
+        
+    } 
+    else if("<%= typeof page !== 'undefined' ? page : '' %>"==="contact"){
+        $("#contact").addClass("current-page")
+        $("#Lcontact").addClass("current")
+    } 
+    else if("<%= typeof page !== 'undefined' ? page : '' %>"==="profile"){
+        $("#profile").addClass("current-page")
+        $("#Lprofile").addClass("current")
+    } 
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/<%= typeof page !== 'undefined' ? page : '' %>.js"></script>
+</body>
+</html>
